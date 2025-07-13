@@ -396,7 +396,7 @@ if st.button("🚀 Запустити передбачення", type="primary")
                         st.metric(key, value)
                 else:
                     print(result)
-                    s = f"<p style='font-size:30px;'>{target_value} - {result}</p>"
+                    s = f"<p style='font-size:30px;'>{target_value}: {result}</p>"
                     st.markdown(s, unsafe_allow_html=True) 
 
                     features_2d = get_2d_features(final_smiles)
